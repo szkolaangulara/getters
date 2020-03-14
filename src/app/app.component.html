@@ -1,0 +1,7 @@
+<div *ngFor="let car of cars">
+  {{car.brand}} {{car.model}} {{car.type}} {{car.engineType}}
+  <button (click)="carSelected(car)">Wybierz samochód</button>
+</div>
+
+<p>Wybrałeś samochód marki: {{selectedCar}}</p>
+<p>Status zamówienia: {{carDeliveryStatus}}</p>
